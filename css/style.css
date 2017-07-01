@@ -65,11 +65,12 @@ footer.page-footer {
   
   width: 500%;
   margin:0 2%;
-  /*filter: blur(4px);*/
+  filter: blur(4px);
 }
 
 #q1box, #q2box, #q3box, #q4box, #q5box, #q6box, #q7box, #q8box, #q9box{
   width: 7%;
+  
 }
 
 #section{
