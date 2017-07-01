@@ -15,7 +15,7 @@ var clockRunning = false;
 // Our stopwatch object
 var stopwatch = {
 
-  time: 20,
+  time: 60,
   
 
   reset: function() {
@@ -146,7 +146,16 @@ $(".q9").on("click",function(){
 function timeUp (){
 
 //Show all questions again
-  $("#q1box, #q2box, #q3box, #q4box, #q5box, #q6box, #q7box, #q8box, #q9box").show(); 
+  $("#q1box, #q2box, #q3box, #q4box, #q5box, #q6box, #q7box, #q8box, #q9box").show();
+  $("#1correct").css("color","white");
+  $("#2correct").css("color","white");
+  $("#3correct").css("color","white");
+  $("#4correct").css("color","white");
+  $("#5correct").css("color","white");
+  $("#6correct").css("color","white");
+  $("#7correct").css("color","white");
+  $("#8correct").css("color","white");
+  $("#9correct").css("color","white");
   
 
 //Remove slider styling
@@ -166,7 +175,7 @@ for(var i = 1; i <= 9; i++) {
     }
   }
 }                   
-        alert("Correct Responses: " + amountCorrect);
+        alert("Correct Responses: " + amountCorrect + "\nCorrect answers are displays in white.");
 
 
 }
